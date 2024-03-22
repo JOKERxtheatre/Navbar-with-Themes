@@ -5,7 +5,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 
-type Props = {};
+
 
 function ThemeList() {
   let themes: any = [
@@ -99,7 +99,7 @@ function ThemeList() {
   );
 }
 
-const Header = (props: Props) => {
+const Header = () => {
   const NavbarItems = [
     {
       id: 1,
