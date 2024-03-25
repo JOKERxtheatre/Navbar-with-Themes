@@ -5,8 +5,6 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 
-
-
 function ThemeList() {
   let themes: any = [
     "light",
@@ -119,7 +117,7 @@ const Header = () => {
   ].map(({ id, title }) => {
     return (
       <li key={id}>
-        <button className="hover:text-primary transition-colors duration-150">
+        <button className="text-primary hover:text-white transition-colors duration-150">
           {title}
         </button>
       </li>
@@ -134,7 +132,7 @@ const Header = () => {
 
   return (
     <header className="">
-      <div className="bg-primary px-5 top-0  container flex items-center max-[350px]:flex-col justify-between gap-3 py-6 fixed border-b-2 border-primary z-20">
+      <div className="w-full bg-neutral px-5 top-0  container flex items-center max-[350px]:flex-col justify-between gap-3 py-6 fixed border-b-2 border-primary z-20">
         <ul className="hidden md:flex gap-4 ml-10">{NavbarItems}</ul>
 
         <div className="hidden md:flex gap-4">
